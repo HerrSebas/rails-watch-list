@@ -302,7 +302,18 @@
 }
 
 .box-poster{
-  width: 250px;
+  width: 300px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border: 1px;
+  border-color: #ff0079;
+  border-radius: 10px;
+  align-content: center;
+
+  a {
+    text-decoration: none;
+    color: #150e56;
+    font-weight: bold;
+  }
 }
 
 .movies-grid{
@@ -405,16 +416,24 @@
   color: #fff;
   padding: 10px;
   background-color: #542e71;
+
+
 }
+
 
 .movie-title{
   font-size: 32px;
   text-transform: uppercase;
 }
 
-.movie-path{
+.movie-path {
   text-align: center;
   font-weight: 300;
   font-size: 18px;
   text-decoration: none;
+}
+
+.show-movie-img {
+  width: 290px;
+  border-radius: 10px;
 }

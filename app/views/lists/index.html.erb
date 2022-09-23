@@ -15,7 +15,7 @@
       <p class="banner-title">AVENGERS COLLECTION</p>
       <p class="banner-subtitle">All movies available right now!</p>
       <div class="btn-infos">
-        <p class="btn-add">Add movie</p>
+        <p class="btn-add"><%= link_to "Add movie", new_movie_path  %></p>
         <p class="btn-more-info">Info</p>
       </div>
     </div>
@@ -40,7 +40,7 @@
                   <span class="click">
                     <%= link_to "More info", list_path(list), class: "btn-click" %>
                   </span>
-                </div>z
+                </div>
               </div>
             </div>
           </div>

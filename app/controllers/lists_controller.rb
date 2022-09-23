@@ -11,6 +11,16 @@ class ListsController < ApplicationController
     @list = List.new
   end
 
+  def edit; end
+
+  def update
+      if @list.update(list_params)
+        redirect_to list_path(@list)
+      else
+        render :new
+      end
+  end
+
   def create
     @list = List.new(list_params)
     if @list.save
